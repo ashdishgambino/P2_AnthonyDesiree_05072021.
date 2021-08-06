@@ -11,10 +11,6 @@ body {
     font-size: 0.95em;
   }
 
-.logo {
-  width: 0.3px;
-}
-
 
 header {
     position: relative;
@@ -85,7 +81,7 @@ form {
     background-color: #F2F2F2;
 }
 .map:hover{
-    font-size: 3;
+    font-style: inherit;
 }
 input{
     height: 43.5px;
@@ -121,7 +117,8 @@ button{
     display: none;
 }
 button:hover{
-    font-size: 1em;
+    font-style: inherit;
+    
 }
 .filtres{
     display: flex;
