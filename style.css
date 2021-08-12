@@ -3,20 +3,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
 
-/*--------------------------------POLICE-------------------------------------------*/
+/*--------------------------------HEADER + NAV ------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
+#logo {
+    width: 100px;
+    height: 50px;
+}
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     color: black;
     max-width: 1440px;
     width: auto;
     margin: 0 auto;
     font-size: 0.95em;
-  }
+
+}
 
 header {
+
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -24,10 +30,12 @@ header {
     padding-top: 2%;
     margin: 0 3.8% 0 3.8%;
 }
-nav{
-   margin-top: 10px;
-   position: relative;
+
+nav {
+    margin-top: 14px;
+    position: relative;
 }
+
 header nav a {
     text-decoration: none;
     color: black;
@@ -42,11 +50,11 @@ nav a:hover{
 nav a:visited{
     text-decoration: none;
 }
-.link_inscription{
+.lien_inscrire{
     color: #0065FC;
     font-weight: bold;
 }
-.link_inscription:hover{
+.lien_inscrire:hover{
     border-top: none;
 }
 main{
@@ -59,15 +67,14 @@ main{
     flex-direction: column;
 }
 .intro h1{
-    font-weight:600;
+    font-weight:800;
     margin-bottom: 0;
     font-size: 1.35em;
-    
 }
 .intro p{
     margin-top: 7px;
     font-size: 0.9em;
-    font-weight: 500px;
+    font-weight: 600;
 }
 form {
     margin: 0.8em 0 1em 0;
@@ -85,16 +92,14 @@ form {
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
 }
-.map:hover{
-    text-decoration: none;
-}
+
 input{
     height: 43.5px;
     padding: 0 0 0 1em;
     margin: 0;
     width: 17%;
     min-width: 155px;
-    border: 2px solid rgb(242,242,242);
+    border: 3px solid rgb(242,242,242);
     font-size: 1.1em;
     font-family: inherit;
     font-weight: 600;
@@ -121,9 +126,7 @@ button{
 .fa-search{
     display: none;
 }
-button:hover{
-    text-decoration: none;
-}
+
 .filtres{
     display: flex;
     width: 100%;
@@ -180,10 +183,10 @@ button:hover{
     transition: 0.2s;
 }
 .info{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 0.90em;
 }
-.cercle{
+.logoinfo{
     color: #0065FC;
     font-size: 0.70em;
     border: 1px solid rgb(217, 217, 217);
@@ -194,16 +197,16 @@ button:hover{
     justify-content: center;
     align-items: center;
     margin-right: 7px;
-    padding: 1px;
+    padding: 1px
 }
-.logoinfo{
+.info{
     display: flex;
     align-items: center;
     margin-bottom: 1em;
     margin-top: 1.2em;
 }
 
-/*------------------------------HEBERGEMENTS---------------------------------------*/
+/*--------------------------------HEBERGEMENTS-------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
 .hebergement{
@@ -226,7 +229,7 @@ button:hover{
 }
 .hebergement p:hover{
     width: fit-content;
-    
+   
 }
 .hebergement section{
     background-color: #F2F2F2;
@@ -236,17 +239,17 @@ button:hover{
     width: 61%;
     padding: 40px;
 }
-.hebergement section .blocLodging{
+.hebergement section .bloclodging{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 415px;
 }
-.hebergement section .blocLodging div{
+.hebergement section .bloclodging div{
     display: flex;
     justify-content: space-between;
 }
-.hebergement section .blocLodging div article{
+.hebergement section .bloclodging div article{
     border: 1px solid white;
     border-radius: 15px;
     height: 190px;
@@ -260,13 +263,14 @@ button:hover{
     justify-content: flex-start;
     transition: transform .2s;
 }
-.hebergement section .blocLodging div article:hover {
+.hebergement section .bloclodging div article:hover {
+
     transform: scale(1.019); 
   }
-.hebergement section .blocLodging div article:active{
+.hebergement section .bloclodging div article:active{
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
-.blocLodging article img{
+.bloclodging article img{
     height: 115px;
     width: 98%;
     margin-left: 2px;
@@ -274,7 +278,7 @@ button:hover{
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
-.blocLodging article h3{
+.bloclodging article h3{
     font-size: 1em;
     margin: 8px 0 4px 15px;
 }
@@ -300,7 +304,7 @@ aside{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 30.1%;
+    width: 30%;
 }
 .populaire{
     all: unset;
@@ -318,6 +322,7 @@ aside div{
     padding: 4px 30px 5px 30px;
 }
 aside div article:hover {
+
     transform: scale(1.019); 
 }
 aside div article:active{
@@ -378,18 +383,18 @@ aside div article div span{
     font-size: 0.8em;
     padding: 50px 0 2px 0;
 }
-.etoiles_populaire2{
-    box-sizing: border-box;
-    position: absolute;
+.etoiles_populairemilieu{
     all: unset;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
-    padding: 31px 0 2px 0;
+    padding: 50px 0 2px 0;
+    margin-top: 4px;
 }
 
-/*---------------------------------ACTIVITES---------------------------------------*/
+/*--------------------------------ACTIVITES----------------------------------------*/
 /*---------------------------------------------------------------------------------*/
+
 
 .activites{
     height: 700px;
@@ -436,6 +441,7 @@ aside div article div span{
     border-radius: 15px;
 }
 .grandecarte:hover, .doublecartepartie1:hover, .doublecartepartie2:hover, .doublecarte2partie1:hover, .doublecarte2partie2:hover{
+
     transform: scale(1.019); 
     cursor: pointer;
 }
@@ -481,7 +487,7 @@ aside div article div span{
     margin-top: 14px;
 }
 
-/*---------------------------------FOOTER------------------------------------------*/
+/*----------------------------------FOOTER-----------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
 footer{
@@ -505,11 +511,13 @@ footer section p{
     margin-top: 20px;
     cursor: pointer;
     width: fit-content;
-    
+ 
+}
+footer section p:hover{
+  cursor: pointer;
 }
 
-
-/*-------------------------------RESPONSIVE----------------------------------------*/
+/*--------------------------------RESPONSIVE---------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
  @media (min-width: 872px) and (max-width: 1160px){
@@ -564,7 +572,10 @@ footer section p{
             width: 100%;
             justify-content: space-between;
         }
-      
+        .filtres div
+        {
+            margin-left: 77px;
+        }
 }
 @media all and (max-width: 871px){
     .hebergement{
@@ -592,32 +603,36 @@ footer section p{
         width: 100%;
         justify-content: space-between;
     }
-    .Carte_Lodging article img{
+    .bloclodging article img{
         object-fit: fill;
     }
     input{
         width: 75%;
     }
-
+    .filtres div
+    {
+        margin-left: 77px;
+    }
+}
 @media screen and (max-width: 610px) {
     .hebergement section{
         padding: 30px;
     }
-    .hebergement section .Carte_Lodging div{
+    .hebergement section .bloclodging div{
         flex-direction: column;
         margin: 0;
         justify-content: space-between;
         height: 650px;
         width: 100%;
     }
-    .hebergement section .Carte_Lodging{
+    .hebergement section .bloclodging{
         height: 1330px;
         width: 100%;
     }
-    .hebergement section .Carte_Lodging div article{
+    .hebergement section .bloclodging div article{
         width: auto;
     }
-    .intro{
+    .intro{     
         height: 500px;
     }
     .filtres{
@@ -670,7 +685,10 @@ footer section p{
     footer section{
         width: 80%;
     }
- 
+    .filtres div
+    {
+        margin-left: 0px;
+    }
     button span{
         display: none;
     }
@@ -719,16 +737,17 @@ footer section p{
         border-top: unset;
         padding-top: 0;
     }
-    .link_inscription {
+    .lien_inscrire {
         all: unset;
-        position: absolute;
+        position:absolute;
         top: 19px;
         right: 0px;
         width: unset;
         color: #0065FC;
         font-weight: bold;
+        justify-content: left;
     }
-    .link_inscription:hover{
+    .lien_inscrire:hover{
         all: unset;
         border-top: none;
         color: #0065FC;
@@ -738,10 +757,10 @@ footer section p{
         right: 0px;
         width: unset;
     }
-    .parametres h1{
+    .intro h1{
         margin-top: 1.8em;
     }
 }
 
-/*-------------------------------RESPONSIVE----------------------------------------*/
+/*--------------------------------RESPONSIVE---------------------------------------*/
 /*---------------------------------------------------------------------------------*/
